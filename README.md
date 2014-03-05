@@ -1,5 +1,7 @@
 # MovieStone
 
+[![Gem Version](https://badge.fury.io/rb/movie_stone.png)](http://badge.fury.io/rb/movie_stone) [![Build Status](https://travis-ci.org/blackxored/movie_stone.png)](https://travis-ci.org/blackxored/movie_stone) [![Coverage Status](https://coveralls.io/repos/blackxored/movie_stone/badge.png?branch=master)](https://coveralls.io/r/blackxored/movie_stone) [![Dependency Status](https://gemnasium.com/blackxored/movie_stone.png)](https://gemnasium.com/blackxored/movie_stone) [![Code Climate](https://codeclimate.com/github/blackxored/movie_stone.png)](https://codeclimate.com/github/blackxored/movie_stone)
+
 MovieStone is a set of tools for movie fans.
 
 # Features:
