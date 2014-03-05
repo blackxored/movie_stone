@@ -35,7 +35,7 @@ Using IMDB identifier:
 
 ## Example Asana task
 
-![http://cl.ly/image/3y2S382N0L2Q]
+![Asana task for Edge of Tomorrow](http://f.cl.ly/items/452j0x032W1X0I0R0R3T/Screen%20Shot%202014-03-05%20at%205.44.08%20PM.png)
 
 ## Configuration
 
