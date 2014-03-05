@@ -12,7 +12,9 @@ MovieStone is a set of tools for movie fans.
 
 1. Install the gem
 
-    $ gem install movie_stone
+```shell
+$ gem install movie_stone
+```
 
 2. Configure it (see example in Configuration section)
 
@@ -20,16 +22,23 @@ MovieStone is a set of tools for movie fans.
 
 ## Usage
 
-Help:
-    $ moviestone help
+### Getting help
 
-Using movie title:
+```shell
+$ moviestone help
+```
 
-    $ moviestone fetch "Edge of Tomorrow"
+### Get and store movie using title
 
-Using IMDB identifier:
+```shell
+$ moviestone fetch "Edge of Tomorrow"
+```
 
-    $ moviestone fetch -i tt1631867
+### Get and store movie using IMDB identifier
+
+```shell
+$ moviestone fetch -i tt1631867
+```
 
 :P
 
@@ -67,7 +76,7 @@ asana:
 
 ## Contributing
 
-1. Fork it ( http://github.com/blackxored/movie_stone/fork )
+1. Fork it (https://github.com/blackxored/movie_stone/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
