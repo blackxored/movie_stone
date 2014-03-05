@@ -1,0 +1,46 @@
+#!/usr/bin/env ruby
+
+require 'gli'
+require 'movie_stone'
+
+include GLI::App
+program_desc "MovieStone: for the fanbase"
+version MovieStone::VERSION
+
+pre do |global_options, command, options, args|
+  MovieStone::Configurator.instance.config
+  true
+end
+
+desc "Fetch movie information"
+arg_name "Movie name or ID"
+command :fetch do |c|
+  c.desc "Uses IMDB identifier"
+  c.switch :i
+
+  c.action do |global_options, options, args|
+    retriever = if options[:i]
+      MovieStone::Retriever.new(id: args.first)
+    else
+      MovieStone::Retriever.new(title: args.first)
+    end
+
+    retriever.retrieve
+    puts retriever.rendered
+    puts "---"
+    puts "Does this seem correct?(y/n)"
+    response = STDIN.gets
+
+    if response.chomp != "y"
+      exit 1
+    else
+      retriever.publish_to(:asana)
+    end
+  end
+end
+
+# TODO: from address
+# TODO: to address
+
+exit run(ARGV)
+#vi:ft=ruby

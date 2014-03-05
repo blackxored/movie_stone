@@ -1,0 +1,2 @@
+module MovieStone
+end
