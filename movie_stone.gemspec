@@ -30,8 +30,11 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rspec", "~> 3.0.0.beta2"
+  spec.add_development_dependency "rr"
   spec.add_development_dependency "aruba"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "guard-rspec"
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "webmock", "~> 1.15.0"
   spec.add_development_dependency "coveralls"
 end
