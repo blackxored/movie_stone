@@ -6,8 +6,7 @@ module MovieStone
     end
 
     def render(movie)
-      @movie = movie
-      ERB.new(File.read(@template_file)).result(binding)
+      Tilt.new(@template_file).render(self, movie: movie)
     end
   end
 end

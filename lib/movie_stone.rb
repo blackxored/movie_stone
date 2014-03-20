@@ -5,6 +5,7 @@ require "json"
 require "erb"
 require "uri"
 require "mail"
+require "tilt"
 
 require "movie_stone/version"
 require "movie_stone/configurator"

@@ -25,6 +25,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "hashie"
   spec.add_runtime_dependency "activesupport", "~> 4.1.0.rc1"
   spec.add_runtime_dependency "gli", "2.9.0"
+  spec.add_runtime_dependency "tilt"
+  spec.add_runtime_dependency "erubis"
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
