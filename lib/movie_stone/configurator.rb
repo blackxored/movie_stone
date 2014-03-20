@@ -11,7 +11,7 @@ module MovieStone
       if File.exist?(@config_file)
         @config = YAML.load_file(@config_file)
       else
-        @config = {}
+        @config = File.expand_path('../examples/movie_stone.rc.yml', __FILE__)
         write_config(@config)
       end
 

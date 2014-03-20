@@ -1,0 +1,14 @@
+mail:
+  delivery:
+    address: 'smtp.gmail.com'
+    port: 587,
+    domain: 'anything'
+    user_name: 'johndoe@gmail.com'
+    authentication: 'plain'
+    enable_starttls_auto: true
+  settings:
+    from_addr: 'johndoe@gmail.com'
+
+asana:
+  project_addr: 'x+someproject@mail.asana.com'
+  from_addr: 'customized@gmail.com'
